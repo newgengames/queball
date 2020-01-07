@@ -44,7 +44,7 @@
 		<div class="head">Favorites</div>
 		  <div class="content">
 			<div class="getfav" onclick="document.getElementsByClassName('getfav')[0].style.display='none'; document.getElementsByClassName('removefav')[0].style.display='block';  displayItems();">Get Favourites</div>
-			<div class="removefav" onclick=" removeItems();">Clear All</div>
+			<div class="removefav" onclick="localStorage.clear(); ">Clear All</div>
              <p id="demo"></p>
           </div>
 	</div>
@@ -59,9 +59,7 @@ function displayItems() {
   }
 }
 
-function removeItems() {
-  localStorage.clear()
-}
+
 </script>
 		
 		
