@@ -41,7 +41,7 @@
 			border-radius:7px;
 			margin:0 auto;
 			background-color:#424b5e;
-			display:none;
+			
 			}
 			
 		/*localstorage post*/
@@ -77,21 +77,20 @@
 	<div class="full">
 		<div class="head">Favorites</div>
 		  <div class="content">
-			<div class="getfav" onclick="document.getElementsByClassName('getfav')[0].style.display='none'; document.getElementsByClassName('removefav')[0].style.display='block';  displayItems();">Get Favourites</div>
+			
 			<div class="removefav" onclick="localStorage.clear(); window.location.href=window.location.href;">Clear All</div>
              <p id="demo"></p>
           </div>
 	</div>
 	
 	<script>
-function displayItems() {
   var l, i;
   document.getElementById("demo").innerHTML = "";
   for (i = 0; i < localStorage.length; i++) {
   x = localStorage.key(i);
   document.getElementById("demo").innerHTML += x + "<br>";
   }
-}
+
 </script>
 		
 </body>
