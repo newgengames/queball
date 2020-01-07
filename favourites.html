@@ -1,0 +1,56 @@
+<html>
+<head>
+	<style>
+		body {
+			background-color:#3B4254;
+			color:C6CBD4;
+			text-align:center;
+			}
+			
+		.full {
+			
+			}
+			
+		.head {
+			font-size:25px;
+			}
+			
+		.content {
+			width:100%;
+			
+			transform:translateY(30px);
+			}
+			
+		.btn {
+			width:100px;
+			padding:15px;
+			border-radius:7px;
+			margin:0 auto;
+			background-color:#424b5e;
+			
+			}
+	</style>
+</head>
+<body>
+	<div class="full">
+		<div class="head">Favorites</div>
+		  <div class="content">
+			<div class="btn" onclick="document.getElementsByClassName('btn')[0].style.display='none'; displayItems();">Get Favourites</div>
+             <p id="demo"></p>
+          </div>
+	</div>
+	
+	<script>
+function displayItems() {
+  var l, i;
+  document.getElementById("demo").innerHTML = "";
+  for (i = 0; i < localStorage.length; i++) {
+  x = localStorage.key(i);
+  document.getElementById("demo").innerHTML += x + "<br>";
+  }
+}
+</script>
+		
+
+</body>
+</html>
