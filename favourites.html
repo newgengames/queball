@@ -46,7 +46,8 @@ function displayItems() {
   document.getElementById("demo").innerHTML = "";
   for (i = 0; i < localStorage.length; i++) {
   x = localStorage.getItem(i);
-  document.getElementById("demo").innerHTML += x + "<br>";
+  y = localStorage.key(i);
+  document.getElementById("demo").innerHTML += x + y + "<br>";
   }
 }
 </script>
