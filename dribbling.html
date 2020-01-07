@@ -1,1 +1,200 @@
-dribbling 
+<html>
+<head>
+	    <meta name="viewport" content="initial-scale=2, maximum-scale=1.0, user-scalable=no" />
+	<style>
+		@font-face {
+    font-family: "Montserrat-Bold";
+    src: url(Montserrat-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: "Montserrat-Regular";
+    src: url(Montserrat-Regular.ttf);
+  }
+  
+	body {
+		background-color:#3B4254;
+		font-family:Montserrat-Bold;
+		overflow-x:hidden;
+		color:#C6CBD4;
+		}
+		
+	.head {
+		width:100%;
+		text-align:center;
+		padding-top:15px;
+		padding-bottom:15px;
+		color:#C6CBD4;
+		font-size:18px;
+		}
+		
+		.content {
+			display:flex;
+			flex-wrap:wrap;
+			}
+		
+		.post {
+			width:150px;
+			height:230px;
+			background-color:#424B5E;
+			overflow:hidden;
+			margin:7px;
+			display:block;
+			
+			border-radius:5px;
+			
+			}
+			
+			.icon {
+				width:150px;
+				height:150px;
+				
+				
+				
+				}
+				
+			.icon-img {
+				width:100%;
+				height:100%;
+				
+				}
+				
+			.post-txt {
+				width:100%;
+				height:55px;
+				color:#C6CBD4;
+				font-size:13px;
+				font-weight:100;
+				font-family:Montserrat-Regular;
+				padding-left:5px;
+				padding-top:5px;
+				}
+				
+			.tough {
+				text-align:center;
+				font-size:12px;
+				}
+	</style>
+</head>
+<body>
+	<div class="full">
+		<div class="head">Dribbling</div>
+		  <div class="content">
+			
+		<div class="post post4">
+		     <div class="icon">
+			    <img src="img.png" class="icon-img">
+		     </div>
+		    <div class="post-txt">
+			4. 9 Easy Basic Dribbling Skill You Must Know <br/>
+		    </div>
+		<div class="tough">Beginner</div>
+		</div>
+		
+		<div class="post post3">
+		     <div class="icon">
+			    <img src="img.png" class="icon-img">
+		     </div>
+		    <div class="post-txt">
+			3. 9 Easy Basic Dribbling Skill You Must Know <br/>
+		    </div>
+		<div class="tough">Advanced</div>
+		</div>
+		
+		<div class="post post2">
+		     <div class="icon">
+			    <img src="img.png" class="icon-img">
+		     </div>
+		    <div class="post-txt">
+			2. 9 Easy Basic Dribbling Skill You Must Know <br/>
+		    </div>
+		<div class="tough">Intermediate</div>
+		</div>
+		
+		<div class="post post1" onclick="Clickone(); document.getElementsByClassName('headintro')[0].style.display='block'; document.getElementsByClassName('contentintro')[0].style.display='block'; ">
+		     <div class="icon">
+			    <img src="bg.jpg" class="icon-img">
+		     </div>
+		    <div class="post-txt">
+			1. 9 Easy Basic Dribbling Skill You Must Know <br/>
+		    </div>
+		<div class="tough">Beginner</div>
+		</div>
+		   <script>
+          function Clickone() {
+            setTimeout(
+              function() {
+               parent.location='dribbling/post1/index.html';
+           }, 500);
+           }
+       </script>
+		
+		</div>
+		
+	</div>
+	
+	
+	<div class="contentintro"></div>
+	<div class="headintro"></div>
+	
+		
+		<style>
+			.headintro {
+			width:100%;
+			height:270px;
+			background-color:#3B4254;
+			position:fixed;
+			top:0;
+			left:0;
+			display:none;
+			animation:headintro 0.5s linear 1;
+			}
+			
+		@keyframes headintro {
+			0% {
+				transform:translateY(-270px);
+				}
+				
+			100% {
+				transform:translateY(0px);
+				}
+			}
+			
+		.contentintro {
+			width:100%;
+			height:100%;
+			background-color:white;
+			position:absolute;
+			top:0;
+			left:0;
+			overflow:hidden;
+			
+			display:none;
+			animation:contentintro 0.5s linear 1;
+			}
+			
+		@keyframes contentintro {
+			0% {
+				transform:translateY(800px);
+				}
+				
+			100% {
+				transform:translateY(0px);
+				}
+			}
+			
+		</style>
+		
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
