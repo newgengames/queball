@@ -45,7 +45,7 @@ function displayItems() {
   var l, i;
   document.getElementById("demo").innerHTML = "";
   for (i = 0; i < localStorage.length; i++) {
-  x = localStorage.getItem('i');
+  x = localStorage.getItem('name');
   y = localStorage.key(i);
   document.getElementById("demo").innerHTML += x + y + "<br>";
   }
