@@ -1,0 +1,328 @@
+<html>
+<head>
+	    <meta name="viewport" content="initial-scale=2, maximum-scale=1.0, user-scalable=no" />
+	<style>
+		  @font-face {
+    font-family: "Montserrat-Regular";
+    src: url(Montserrat-Regular.ttf);
+  }
+  
+		body {
+			margin:0;
+			overflow-x:hidden;
+			font-family:Montserrat-Regular;
+			}
+			
+		.full {
+			overflow:hidden;
+			}
+			
+		.head {
+			width:100%;
+			height:270px;
+			background-color:#3B4254;
+			}
+	   .back {
+		   width:100%;
+		   height:50px;
+		 
+		    }
+		
+		.head-ct {
+			width:100%;
+			height:215px;
+			
+			}
+			
+		.title {
+			font-size:35px;
+			color:gray;
+			font-weight:200;
+			padding:5px;
+			padding-left:15px;
+			transform:translate(0px, 60px);
+			font-family:arial;
+			}
+			
+		.tough {
+			width:180px;
+			font-size:15px;
+			color:gray;
+			font-weight:600;
+			
+			transform:translate(50px, 70px);
+			}
+			
+		.content {
+			width:90%;
+			margin-left:5%;
+			text-align:center;
+			animation:content 0.3s linear 1;
+			}
+			
+		@keyframes content {
+			0% {
+				transform:translateX(-700px);
+				}
+				
+			100% {
+				transform:translateX(0px);
+				}
+			}
+			
+		p {
+			font-size:14px;
+			color:gray;
+			font-weight:800;
+			
+			line-height:1.5;
+			letter-spacing:1.2;
+			}
+			
+		h2 {
+			font-size:25px;
+			color:gray;
+			font-weight:800;
+			
+			line-height:1.5;
+			letter-spacing:1.2;
+			}
+			
+		.img-ct {
+			width:80%;
+			
+			border-radius:10px;
+			margin-bottom:20px;
+			
+			}
+			
+		
+		.button {
+			width:170px;
+			height:50px;
+			
+			font-size:15px;
+			margin-left:0 auto;
+			background-color:#485066;
+			text-align:center;
+			color:white;
+			border-radius:4px;
+			}
+			
+		 .divide {
+			width:100%;
+			height:1px;
+			background-color:#3B4254;
+			margin-top:15px;
+			}
+			
+		.fav {
+			
+			width:100%;
+			padding-top:15px;
+			padding-bottom:15px;
+			
+			
+			}
+			
+		.added {
+			display:none;
+			width:100%;
+			padding-top:15px;
+			padding-bottom:15px;
+			}
+		
+	</style>
+</head>
+<body>
+<div class="full">
+	<div class="head">
+		<img src="bg.jpg" width="100%" height="270px" style="position:absolute;">
+			
+		<div class="back"></div>
+		<div class="head-ct">
+			<div class="title">Basic dribbling skills you should know</div>
+			<div class="tough">Beginner</div>
+		</div>
+	</div>
+	
+	<div class="content">
+			<p>Learn these basic dribbling skill. 
+                   Even professionals are using these skill on their day to day matches.</p>
+			
+			<h2 id="vid1">11. Drag Back</h2>
+			<video  class="img-ct" poster="https://newgengames.github.io/queball/res/poster.jpg" src="011 Drag Back.mp4" autoplay muted loop> Preview is not supported by your device</video>
+			<div class="button">
+                <div class="fav fav1" onclick="document.getElementsByClassName('fav1')[0].style.display='none'; document.getElementsByClassName('added1')[0].style.display='block'; createItems1(); ">
+               ADD TO FAVORITES</div>
+                <div class="added added1">ADDED</div>
+           </div>
+			<div class="divide"></div>
+			<script>
+function createItems1() {
+  localStorage.setItem("<a href='dribbling/beginner/post2.html#vid1'><div class='favpost'><div class='favcontent'><img class='favimg' src='res/dribbling.png'/><div class='text'> Drag Back</div></div></div></a>", "name");
+  
+}
+</script>
+			
+			<h2 id="vid2">12. The Roll</h2>
+			<video class="img-ct" poster="https://newgengames.github.io/queball/res/poster.jpg" src="012 The Roll.mp4" autoplay muted loop> Preview is not supported by your device</video>
+			<div class="button">
+                <div class="fav fav2" onclick="document.getElementsByClassName('fav2')[0].style.display='none'; document.getElementsByClassName('added2')[0].style.display='block'; createItems2(); ">
+               ADD TO FAVORITES</div>
+                <div class="added added2">ADDED</div>
+           </div>
+		    <div class="divide"></div>
+		<script>
+function createItems2() {
+  localStorage.setItem("<a href='dribbling/beginner/post2.html#vid2'><div class='favpost'><div class='favcontent'><img class='favimg' src='res/dribbling.png'/><div class='text'> The Roll</div></div></div></a>", "name");
+}
+</script>
+		
+		<h2 id="vid3">13. Stepover Turn</h2>
+			<video class="img-ct" poster="https://newgengames.github.io/queball/res/poster.jpg" src="013 Stepover Turn.mp4" autoplay muted loop> Preview is not supported by your device</video>
+			<div class="button">
+                <div class="fav fav3" onclick="document.getElementsByClassName('fav3')[0].style.display='none'; document.getElementsByClassName('added3')[0].style.display='block'; createItems3(); ">
+               ADD TO FAVORITES</div>
+                <div class="added added3">ADDED</div>
+           </div>
+		    <div class="divide"></div>
+		<script>
+function createItems3() {
+  localStorage.setItem("<a href='dribbling/beginner/post2.html#vid3'><div class='favpost'><div class='favcontent'><img class='favimg' src='res/dribbling.png'/><div class='text'>Stepover Turn</div></div></div></a>", "name");
+}
+</script>
+		
+		<h2 id="vid4">14. Isco V-Drag</h2>
+			<video class="img-ct" poster="https://newgengames.github.io/queball/res/poster.jpg" src="014 Isco V-Drag.mp4" autoplay muted loop> Preview is not supported by your device</video>
+			<div class="button">
+                <div class="fav fav4" onclick="document.getElementsByClassName('fav4')[0].style.display='none'; document.getElementsByClassName('added4')[0].style.display='block'; createItems4(); ">
+               ADD TO FAVORITES</div>
+                <div class="added added4">ADDED</div>
+           </div>
+		    <div class="divide"></div>
+		<script>
+function createItems4() {
+  localStorage.setItem("<a href='dribbling/beginner/post2.html#vid4'><div class='favpost'><div class='favcontent'><img class='favimg' src='res/dribbling.png'/><div class='text'>Isco V-Drag</div></div></div></a>", "name");
+}
+</script>
+		
+		<h2  id="vid5">15. Isco Mesmerizer</h2>
+			<video class="img-ct" src="015 Isco Mesmerizer.mp4" autoplay muted loop> Preview is not supported by your device</video>
+			<div class="button">
+                <div class="fav fav5" onclick="document.getElementsByClassName('fav5')[0].style.display='none'; document.getElementsByClassName('added5')[0].style.display='block'; createItems5(); ">
+               ADD TO FAVORITES</div>
+                <div class="added added5">ADDED</div>
+           </div>
+		    <div class="divide"></div>
+		<script>
+function createItems5() {
+  localStorage.setItem("<a href='dribbling/beginner/post2.html#vid5'><div class='favpost'><div class='favcontent'><img class='favimg' src='res/dribbling.png'/><div class='text'>Isco Mesmerizer</div></div></div></a>", "name");
+}
+</script>
+		
+		<h2 id="vid6">16. Drag Back Croquetta</h2>
+			<video class="img-ct" src="016 Drag Back Croquetta.mp4" autoplay muted loop> Preview is not supported by your device</video>
+			<div class="button">
+                <div class="fav fav6" onclick="document.getElementsByClassName('fav6')[0].style.display='none'; document.getElementsByClassName('added6')[0].style.display='block'; createItems6(); ">
+               ADD TO FAVORITES</div>
+                <div class="added added6">ADDED</div>
+           </div>
+		    <div class="divide"></div>
+		<script>
+function createItems6() {
+  localStorage.setItem("<a href='dribbling/beginner/post2.html#vid6'><div class='favpost'><div class='favcontent'><img class='favimg' src='res/dribbling.png'/><div class='text'>Drag Back Croquetta</div></div></div></a>", "name");
+}
+</script>
+		
+		<h2 id="vid7">17. Self Pass</h2>
+			<video class="img-ct" src="017 Self Pass.mp4" autoplay muted loop> Preview is not supported by your device</video>
+			<div class="button">
+                <div class="fav fav7" onclick="document.getElementsByClassName('fav7')[0].style.display='none'; document.getElementsByClassName('added7')[0].style.display='block'; createItems7(); ">
+               ADD TO FAVORITES</div>
+                <div class="added added7">ADDED</div>
+           </div>
+		    <div class="divide"></div>
+		<script>
+function createItems7() {
+  localStorage.setItem("<a href='dribbling/beginner/post2.html#vid7'><div class='favpost'><div class='favcontent'><img class='favimg' src='res/dribbling.png'/><div class='text'>Self Pass</div></div></div></a>", "name");
+}
+</script>
+		
+		<h2 id="vid8">18. Stepover La Croquetta</h2>
+			<video class="img-ct" src="018 Stepover La Croquetta.mp4" autoplay muted loop> Preview is not supported by your device</video>
+			<div class="button">
+                <div class="fav fav8" onclick="document.getElementsByClassName('fav8')[0].style.display='none'; document.getElementsByClassName('added8')[0].style.display='block'; createItems8(); ">
+               ADD TO FAVORITES</div>
+                <div class="added added8">ADDED</div>
+           </div>
+		    <div class="divide"></div>
+		<script>
+function createItems8() {
+  localStorage.setItem("<a href='dribbling/beginner/post2.html#vid8'><div class='favpost'><div class='favcontent'><img class='favimg' src='res/dribbling.png'/><div class='text'>Stepover La Croquetta</div></div></div></a>", "name");
+}
+</script>
+		
+		<h2 id="vid9">19. The Stop & Start</h2>
+			<video class="img-ct" src="019 The Stop & Start.mp4" autoplay muted loop> Preview is not supported by your device</video>
+			<div class="button">
+                <div class="fav fav9" onclick="document.getElementsByClassName('fav9')[0].style.display='none'; document.getElementsByClassName('added9')[0].style.display='block'; createItems9(); ">
+               ADD TO FAVORITES</div>
+                <div class="added added9">ADDED</div>
+           </div>
+		    <div class="divide"></div>
+		<script>
+function createItems9() {
+  localStorage.setItem("<a href='dribbling/beginner/post2.html#vid9'><div class='favpost'><div class='favcontent'><img class='favimg' src='res/dribbling.png'/><div class='text'> The Stop & Start</div></div></div></a>", "name");
+}
+</script>
+
+<h2 id="vid9">20. Body Feint</h2>
+			<video class="img-ct" src="020 Body Feint.mp4" autoplay muted loop> Preview is not supported by your device</video>
+			<div class="button">
+                <div class="fav fav10" onclick="document.getElementsByClassName('fav9')[0].style.display='none'; document.getElementsByClassName('added9')[0].style.display='block'; createItems10(); ">
+               ADD TO FAVORITES</div>
+                <div class="added added10">ADDED</div>
+           </div>
+		    <div class="divide"></div>
+		<script>
+function createItems10() {
+  localStorage.setItem("<a href='dribbling/beginner/post2.html#vid10'><div class='favpost'><div class='favcontent'><img class='favimg' src='res/dribbling.png'/><div class='text'>Body Feint</div></div></div></a>", "name");
+}
+</script>
+		
+		
+</div>
+
+<div class="more">
+	<div class="more-ct" onclick="parent.location='post1.html';">1-10</div>
+	<div class="more-ct" style="opacity:0.5;">11-20</div>
+	<div class="more-ct" onclick="parent.location='post3.html';">21-30</div>
+	<div class="more-ct" onclick="parent.location='post4.html';">31-40</div>
+</div>
+
+<style>
+ .more {
+ 	width:100%;
+     display:flex;
+     flex-wrap:wrap;
+ }
+
+.more-ct {
+	width:70px;
+	text-align:center;
+	padding-top:15px;
+	padding-bottom:15px;
+	background-color:#3B4254;
+	margin:10px;
+	color:white;
+	border-radius:8px;
+	}
+</style>
+
+</div>
+</body>
+</html>
+
+
+
